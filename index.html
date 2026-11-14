@@ -132,8 +132,8 @@
         .btn {
             display: inline-block;
             margin: 10px 6px;
-            padding: 14px 28px;
-            font-size: 1em;
+            padding: 15px 32px;
+            font-size: 1.05em;
             font-weight: bold;
             text-decoration: none;
             border-radius: 10px;
@@ -148,17 +148,21 @@
             background: linear-gradient(90deg, #10b981, #34d399);
             color: #052e16;
         }
-        .btn-buy {
-            background: linear-gradient(90deg, #ff3b30, #ff6b4a);
-            color: #ffffff;
-            box-shadow: 0 4px 15px rgba(255, 59, 48, 0.4);
+        .btn-soon {
+            background: #1e293b;
+            color: var(--accent-cyan);
+            border: 1px solid rgba(0, 242, 254, 0.4);
+            cursor: default;
+        }
+        .btn-soon:hover {
+            transform: none;
         }
         .btn-yt {
             background-color: #ff0000;
             color: #ffffff;
         }
         .pay-apps {
-            margin-top: 20px;
+            margin-top: 22px;
             padding-top: 18px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
@@ -183,17 +187,6 @@
             font-size: 0.85em;
             font-weight: 600;
             color: #e2e8f0;
-        }
-        .upi-box {
-            display: none;
-            margin-top: 20px;
-            padding: 20px;
-            background: #0b0f19;
-            border: 1px dashed var(--accent-cyan);
-            border-radius: 12px;
-        }
-        .upi-box.active {
-            display: block;
         }
         .roadmap-item {
             display: flex;
@@ -275,12 +268,15 @@
             <a href="https://youtube.com?sub_confirmation=1" target="_blank" class="btn btn-yt">🔔 Subscribe to Studio</a>
         </div>
 
-        <!-- EPISODE 2: TICKET & PAYMENT PORTAL -->
+        <!-- EPISODE 2: TICKET PREVIEW (OPENING MARCH 2027) -->
         <div class="card">
-            <span class="badge badge-ticket">EARLY ACCESS PREMIERE • IN PRODUCTION</span>
+            <span class="badge badge-ticket">EARLY ACCESS PREMIERE • BOOKINGS OPEN MARCH 2027</span>
             <h2>CAPTAIN X: THE RISE — Chapter 2: The Awakening</h2>
             <p style="color: var(--text-muted);">
-                Book your digital premiere pass to unlock the <strong>InfinityFrame 60™ Master Cut</strong> before the public release. Instant access via UPI—no card details or PIN required on this website.
+                Get ready to unlock the <strong>InfinityFrame 60™ Master Cut</strong> before the public release. Instant automated UPI checkout opens in <strong>March 2027</strong>—no waiting and no card PIN required.
             </p>
             <p style="font-size: 1.3em; margin: 12px 0;"><strong>Early Access Ticket: ₹29</strong></p>
 
+            <div class="btn btn-soon">🎟️ Ticket Bookings Open March 2027</div>
+
+            <div class="pay-apps">
