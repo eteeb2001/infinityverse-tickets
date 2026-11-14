@@ -4,9 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFINITYVERSE STUDIOS | Official Premiere & InfinityFrame 60 Portal</title>
-    <!-- Complete CSS styles, responsive containers, InfinityFrame 60 showcase, and roadmap layout included -->
+    <style>
+        :root { --bg-dark: #07090d; --bg-card: #111622; --accent-cyan: #00f2fe; --accent-blue: #4facfe; --accent-red: #ff3b30; --text-main: #ffffff; --text-muted: #a0aec0; }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-dark); color: var(--text-main); text-align: center; line-height: 1.6; }
+        header { background: radial-gradient(circle at top, #1a243b 0%, var(--bg-dark) 80%); padding: 50px 20px 40px; border-bottom: 1px solid rgba(0, 242, 254, 0.3); }
+        .studio-badge { display: inline-block; border: 1px solid var(--accent-cyan); color: var(--accent-cyan); padding: 4px 14px; border-radius: 50px; font-size: 0.75em; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+        h1 { margin: 0; font-size: 2.6em; letter-spacing: 3px; background: linear-gradient(90deg, #ffffff, var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        p.tagline { color: var(--text-muted); font-size: 1.05em; margin-top: 8px; }
+        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        .card { background-color: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 28px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); }
+        .badge { display: inline-block; padding: 5px 14px; border-radius: 20px; font-size: 0.8em; font-weight: bold; letter-spacing: 1px; margin-bottom: 12px; }
+        .badge-free { background-color: #10b981; color: #052e16; }
+        .badge-ticket { background-color: var(--accent-red); color: #ffffff; }
+        .badge-format { background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan)); color: #000000; }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(0, 242, 254, 0.25); background: #000; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .format-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; text-align: left; }
+        .format-box { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(0, 242, 254, 0.2); border-radius: 12px; padding: 16px; }
+        .format-box h4 { margin: 0 0 6px 0; color: var(--accent-cyan); font-size: 1em; }
+        .format-box p { margin: 0; font-size: 0.88em; color: var(--text-muted); }
+        .btn { display: inline-block; margin: 10px 6px; padding: 15px 32px; font-size: 1.05em; font-weight: bold; text-decoration: none; border-radius: 10px; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none; }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-watch { background: linear-gradient(90deg, #10b981, #34d399); color: #052e16; }
+        .btn-soon { background: #1e293b; color: var(--accent-cyan); border: 1px solid rgba(0, 242, 254, 0.4); cursor: default; }
+        .btn-soon:hover { transform: none; }
+        .btn-yt { background-color: #ff0000; color: #ffffff; }
+        .pay-apps { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+        .pay-apps-title { font-size: 0.85em; color: var(--text-muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        .app-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+        .pill { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); padding: 6px 14px; border-radius: 8px; font-size: 0.85em; font-weight: 600; color: #e2e8f0; }
+        .roadmap-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: rgba(255, 255, 255, 0.03); border-radius: 8px; margin-bottom: 10px; text-align: left; }
+        .status-tag { font-size: 0.78em; padding: 4px 10px; border-radius: 12px; background: rgba(0, 242, 254, 0.15); color: var(--accent-cyan); font-weight: bold; }
+        footer { margin-top: 50px; padding: 30px 20px; border-top: 1px solid rgba(255, 255, 255, 0.08); color: var(--text-muted); font-size: 0.9em; }
+    </style>
 </head>
 <body>
-    <!-- Full header, InfinityFrame 60 features, Episode 1 YouTube embed, Chapter 2 bookings, release slate, and footer included -->
+    <header>
+        <div class="studio-badge">Official Digital Cinema Portal</div>
+        <h1>INFINITYVERSE STUDIOS</h1>
+        <p class="tagline">Home of the Ultra Force Cinematic Universe • Streaming &amp; Premiere Tickets</p>
+    </header>
+    <div class="container">
+        <div class="card">
+            <span class="badge badge-format">NEW VIEWING STANDARD</span>
+            <h2>✨ INTRODUCING INFINITYFRAME 60™</h2>
+            <p style="color: var(--text-muted); max-width: 680px; margin: 0 auto;">Engineered for smartphones and modern TVs with zero black bars, ultra-fluid motion, and theater-grade headphone audio.</p>
+            <div class="format-grid">
+                <div class="format-box"><h4>📱 Edge-to-Edge Full Screen</h4><p>Expanded 16:9 / 18:9 framing fills your display.</p></div>
+                <div class="format-box"><h4>⚡ True 60fps Hyper-Motion</h4><p>Double standard cinema frame rate for crisp action.</p></div>
+                <div class="format-box"><h4>🎧 320kbps Master Audio</h4><p>Spatial stereo mix for optimal immersion.</p></div>
+            </div>
+        </div>
+        <div class="card">
+            <span class="badge badge-free">STREAMING FREE WORLDWIDE</span>
+            <h2>CAPTAIN X: THE RISE — Season 1, Chapter 1</h2>
+            <div class="video-wrapper">
+                <iframe src="https://youtube.com" title="Captain X: The Rise - Episode 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <a href="https://youtube.com" target="_blank" class="btn btn-watch">▶ Watch on YouTube</a>
+            <a href="https://youtube.com" target="_blank" class="btn btn-yt">🔔 Subscribe to Studio</a>
+        </div>
+        <div class="card">
+            <span class="badge badge-ticket">EARLY ACCESS PREMIERE • BOOKINGS OPEN MARCH 2027</span>
+            <h2>CAPTAIN X: THE RISE — Chapter 2: The Awakening</h2>
+            <p style="color: var(--text-muted);">Unlock the <strong>InfinityFrame 60™ Master Cut</strong>. Early Access Ticket: ₹29 (Open March 2027).</p>
+            <div class="btn btn-soon">🎟️ Ticket Bookings Open March 2027</div>
+            <div class="pay-apps">
+                <div class="pay-apps-title">Supported Payment Apps</div>
+                <div class="app-pills">
+                    <span class="pill">GPay</span><span class="pill">PhonePe</span><span class="pill">Paytm</span><span class="pill">BHIM UPI</span><span class="pill">Amazon Pay</span><span class="pill">Cred UPI</span><span class="pill">Razorpay</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h3 style="margin-top: 0; color: var(--accent-cyan);">🌌 INFINITYVERSE RELEASE SLATE</h3>
+            <div class="roadmap-item"><div><strong>Chapter 1: Pilot Episode</strong><br><small style="color: var(--text-muted);">Captain X: The Rise</small></div><span class="status-tag" style="color: #10b981; background: rgba(16,185,129,0.15);">STREAMING NOW</span></div>
+            <div class="roadmap-item"><div><strong>Chapter 2: The Awakening</strong><br><small style="color: var(--text-muted);">InfinityFrame 60™ • March 2027</small></div><span class="status-tag">IN PRODUCTION</span></div>
+            <div class="roadmap-item"><div><strong>Chapter 3: The Battle Starts</strong><br><small style="color: var(--text-muted);">Captain X: The Rise • Season 1</small></div><span class="status-tag">UPCOMING</span></div>
+        </div>
+    </div>
+    <footer><strong>INFINITYVERSE STUDIOS</strong> • Ultra Force Cinematic Universe<br><small>&copy; 2026 INFINITYVERSE STUDIOS. All Rights Reserved.</small></footer>
 </body>
 </html>
